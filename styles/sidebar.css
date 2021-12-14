@@ -1,0 +1,45 @@
+#maincontainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  #maincontainer > div:nth-child(1) {
+    flex-basis: 15%;
+    height:900px;
+    background-color:white;
+  }
+  #maincontainer > div:nth-child(2) {
+    flex-basis: 85%;
+    box-sizing: border-box;
+    height:900px;
+    background-color:#F9F9F9;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-gap: 10px;
+    padding-left: 40px;
+  }
+  #leftbox {
+    display: flex;
+    flex-direction: column;
+  }
+  #leftbox > div {
+    height: 50px;
+    box-sizing: border-box;
+    padding-top: 5px;
+  }
+  #leftbox > div:hover {
+    background-color:#ececec;
+  }
+  #leftbox > div > p {
+    position: relative;
+    top:-25px;
+    left:70px;
+  }
+  .iconsize {
+    font-size:35px;
+    padding-top: 12px;
+}
+.iconleft {
+  padding-left:25px;
+  padding-top: 7px;
+}

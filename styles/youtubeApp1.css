@@ -1,6 +1,27 @@
-#navbar{
-    width: 100%;
+#search_results {
+    height:200px;
+    width:39.9%;
+    border: 1px solid #F2F2F2;
+    position: absolute;
+    left: 26.6%;
+    top: 53px;
     display: flex;
-    flex-direction: row;
-    height: 75px;
+    flex-direction: column;
+    margin:0px;
+    padding:0px;
+    background-color: white;
+    visibility: hidden;
+}
+#search_results > div {
+    box-sizing: border-box;
+    padding-left:10px;
+    padding-top: 8px;
+    flex-basis: 40px;
+    font-size: 15px;
+}
+#search_results > div:hover {
+    background-color:#F2F2F2;
+} 
+ #videos {
+  margin-top:40px;
 }
