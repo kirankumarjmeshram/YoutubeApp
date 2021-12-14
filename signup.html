@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<style>
+  * {
+        font-family: 'Roboto', sans-serif;
+        margin-left: 50px
+    }
+  #signindiv {
+    margin-left: 15px;
+;
+  }
+  #signindiv > form > div {
+    margin-top: 50px;
+    
+  }
+</style>
+<body>
+    <div id="navbar">
+      
+    </div>
+    <div id="signindiv">
+        <form id="signup-form" onsubmit="signup(event)">
+            <h1>Signup</h1>
+            <div>
+              <label>Name: </label>
+              <input type="text" id="name" />
+            </div>
+            <div>
+              <label>Email: </label>
+              <input type="text" id="email" />
+            </div>
+            <div>
+              <label>Password: </label>
+              <input type="password" id="password" />
+            </div>
+            <div>
+              <label>Username: </label>
+              <input type="text" id="username" />
+            </div>
+            <div>
+              <label>Mobile Number: </label>
+              <input type="number" id="mobile" />
+            </div>
+            <div>
+              <label>Description: </label>
+              <input type="text" id="description" /> 
+            </div>
+            <div>
+              <button>Submit</button>
+            </div>
+          </form>
+          <a href="Login.html"><h4>Sign in insted</h4></a>
+    </div>
+</body>
+<script type="module">
+    import navbar from "./components/navbar.js";
+   // import sidebar from "./components/sidebar.js";
+    //let sideb = document.getElementById("maincontainer")
+    let nav = document.getElementById("navbar");
+    nav.innerHTML = navbar();
+   // sideb.innerHTML=sidebar();
+</script>
+<script src="./scripts/signup.js">
+    
+</script>
+</html>
